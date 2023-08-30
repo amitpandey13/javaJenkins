@@ -9,11 +9,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootSecurityLearnApplication {
 
 	public static Logger logger = LoggerFactory.getLogger(SpringBootSecurityLearnApplication.class);
-	public  init(){
+	public  void init(){
 
 		logger.info("Logger started working in main");
 	}
 	public static void main(String[] args) {
+		logger.info("Logger started working in main class");
 		SpringApplication.run(SpringBootSecurityLearnApplication.class, args);
 	}
 
